@@ -9,8 +9,17 @@
     </thead>
     <tbody>
 <?php
-while ($player = 
+while ($player = $players->fetch_assoc()){
 ?>
+  <tr>
+    <td><?php echo $player['player_id']; ?></td>
+    <td><?php echo $player['player_name']; ?></td>
+    <td><?php echo $player['player_number']; ?></td>
+    <td><?php echo $player['player_team']; ?></td>
+  </tr>
+  
+}
+
     </tbody>
   </table>
 </div>
