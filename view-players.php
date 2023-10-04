@@ -19,7 +19,7 @@ while ($player = $players->fetch_assoc()){
   </tr>
 <?php
 }
-
+?>
     </tbody>
   </table>
 </div>
