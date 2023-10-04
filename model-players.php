@@ -1,5 +1,5 @@
 <?php
-function selectPlayers($uEmail) {
+function selectPlayers() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT Player_ID, Player_Name, Player_Number, Player_Team FROM `Player`");
