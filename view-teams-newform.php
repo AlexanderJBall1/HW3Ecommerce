@@ -24,6 +24,7 @@
     <label for="tCity" class="form-label">Team City</label>
     <input type="text" class="form-control" id="tCity" name = "tCity">
   </div>
+        <input type = "hidden" name = "ActionType" value = "Add">
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
       </div>
