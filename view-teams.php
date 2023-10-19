@@ -15,6 +15,9 @@
       <th>ID</th>
       <th>City</th>
       <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
     </thead>
     <tbody>
 <?php
@@ -24,6 +27,13 @@ while ($team = $teams->fetch_assoc()){
     <td><?php echo $team['Team_ID']; ?></td>
     <td><?php echo $team['City']; ?></td>
     <td><?php echo $team['Name']; ?></td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+        <form method = "post" action = ""
+    </td>
   </tr>
 <?php
 }
