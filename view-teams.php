@@ -33,7 +33,7 @@ while ($team = $teams->fetch_assoc()){
     </td>
     <td>
         <form method = "post" action = "Player-Teams.php">
-          <input type = "hidden" name = "tid" value = "<?php echo $Team['Team_ID']; ?>">
+          <input type = "hidden" name = "tid" value = "<?php echo $team['Team_ID']; ?>">
           <button type = "submit" class = "btn btn-primary">Teams</button>
     </td>
   </tr>
