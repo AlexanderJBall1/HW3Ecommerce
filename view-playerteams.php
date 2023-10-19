@@ -1,4 +1,4 @@
-<h1>Player Teams</h1>
+<h1>Player Info</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
