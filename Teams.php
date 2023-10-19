@@ -8,7 +8,7 @@ if (isset($_POST['actionType'])){
   switch($_POST['actionType']){
     case "Add":
       insertTeam($_POST['tName'], $_POST['tCity']);
-      break
+      break;
         
   }
 }
