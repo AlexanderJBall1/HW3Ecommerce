@@ -8,12 +8,12 @@
     </thead>
     <tbody>
 <?php
-while ($playerteam = $playerteams->fetch_assoc()){
+while ($player = $players->fetch_assoc()){
 ?>
   <tr>
-    <td><?php echo $playerteam['Player_ID']; ?></td>
-    <td><?php echo $playerteam['Salary']; ?></td>
-    <td><?php echo $playerteam['Years']; ?></td>
+    <td><?php echo $player['Player_ID']; ?></td>
+    <td><?php echo $player['Salary']; ?></td>
+    <td><?php echo $player['Years']; ?></td>
     <td>
       <form method = "post" action = "Player-Teams.php">
         <input type = "hidden" name = "ptid" value = <?php echo $playerteam['Player_ID']; ?>">
