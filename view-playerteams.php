@@ -14,11 +14,6 @@ while ($player = $players->fetch_assoc()){
     <td><?php echo $player['Player_ID']; ?></td>
     <td><?php echo $player['Salary']; ?></td>
     <td><?php echo $player['Years']; ?></td>
-    <td>
-      <form method = "post" action = "Player-Teams.php">
-        <input type = "hidden" name = "pid" value = <?php echo $player['Player_ID']; ?>">
-        <button type = "submit" class = "btn btn-primary">PlayerInfo</button>
-    </td>
   </tr>
 <?php
 }
