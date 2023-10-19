@@ -1,9 +1,9 @@
 <?php
 require_once("util-db.php");
-require_once("model-coaches-by-teams.php");
-$pageTitle = "Team Coaches";
+require_once("model-teams-by-player.php");
+$pageTitle = "Players on Team";
 include "view-header.php";
-$coaches = selectCoachesByTeams($_POST['cid']);
-include "view-coaches-by-teams.php";
+$coaches = selectTeamsByPlayer($_POST['pid']);
+include "view-teams-by-player.php";
 include "view-footer.php";
 ?>
