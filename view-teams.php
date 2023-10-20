@@ -28,8 +28,9 @@ while ($team = $teams->fetch_assoc()){
     <td><?php echo $team['City']; ?></td>
     <td><?php echo $team['Name']; ?></td>
     <td>
-    </td>
-    <td>
+  <?php
+    include "view-teams-editform.php";
+  ?>
     </td>
     <td>
         <form method = "post" action = "">
