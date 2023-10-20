@@ -12,7 +12,15 @@ if (isset($_POST['actionType'])){
       } else{
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
-      break; 
+      break;
+
+    case "Delete":
+      if(deleteTeam($_POST['tid'],)){
+        echo '<div class="alert alert-success" role="alert">Team Added</div>';
+      } else{
+        echo '<div class="alert alert-danger" role="alert">Error</div>';
+      }
+      break;
   }
 }
 $teams = selectTeams();
