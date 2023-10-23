@@ -31,7 +31,7 @@ function insertTeam($tName, $tCity) {
 function updateTeam($tName, $tCity, $Team_ID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `Team` set 'Name' = ?, set 'City' = ? where Team_ID = ? ");
+        $stmt = $conn->prepare("UPDATE Team SET Name = ?, City = ? where Team_ID = ?");
         $stmt->bind_param("ssi", $tName, $tCity, $Team_ID);
         $success = $stmt->execute();
         $result = $stmt->get_result();
