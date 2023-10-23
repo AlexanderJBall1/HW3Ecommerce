@@ -7,7 +7,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="newTeamModal" tabindex="-1" aria-labelledby="newCoachModalLabel" aria-hidden="true">
+<div class="modal fade" id="newCoachModal" tabindex="-1" aria-labelledby="newCoachModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
