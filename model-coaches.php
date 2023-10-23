@@ -17,7 +17,7 @@ function insertCoach($cName, $cRecord) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `Coach` (`Name`, `Record`) VALUES (?, ?);");
-        $stmt->bind_param("ss", $tName, $tCity);
+        $stmt->bind_param("ss", $cName, $cRecord);
         $success = $stmt->execute();
         $conn->close();
         return $success;
