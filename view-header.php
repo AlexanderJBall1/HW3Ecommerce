@@ -28,6 +28,9 @@
         <li class="nav-item">
           <a class="nav-link" href="Player-Teams.php">Player Teams</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Coaches.php">Coaches</a>
+        </li>
       </ul>
     </div>
   </div>
