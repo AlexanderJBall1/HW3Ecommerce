@@ -1,11 +1,11 @@
 <div class = "row">
   <div class = "col">
-<h1>Teams</h1>
+<h1>Coaches</h1>
   </div>
   <div>
     <div class = "col-auto">
   <?php
-    include "view-teams-newform.php";
+    include "view-coaches-newform.php";
   ?>
   </div>
 </div>
@@ -13,28 +13,28 @@
   <table class="table">
     <thead>
       <th>ID</th>
-      <th>City</th>
       <th>Name</th>
+      <th>Record</th>
       <th></th>
       <th></th>
       <th></th>
     </thead>
     <tbody>
 <?php
-while ($team = $teams->fetch_assoc()){
+while ($coach = $coaches->fetch_assoc()){
 ?>
   <tr>
-    <td><?php echo $team['Team_ID']; ?></td>
-    <td><?php echo $team['City']; ?></td>
-    <td><?php echo $team['Name']; ?></td>
+    <td><?php echo $coach['Coach_ID']; ?></td>
+    <td><?php echo $coach['Name']; ?></td>
+    <td><?php echo $coach['Record']; ?></td>
     <td>
   <?php
-    include "view-teams-editform.php";
+    include "view-coaches-editform.php";
   ?>
     </td>
     <td>
         <form method = "post" action = "">
-          <input type = "hidden" name = "tid" value = "<?php echo $team['Team_ID']; ?>">
+          <input type = "hidden" name = "tid" value = "<?php echo $coach['Coach_ID']; ?>">
           <input type = "hidden" name = "actionType" value = "Delete">
           <button type = "submit" class = "btn btn-primary" onclick = "return confirm('Are you sure?');">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
