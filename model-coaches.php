@@ -27,11 +27,11 @@ function insertCoach($cName, $cRecord) {
     }
 }
 
-function updateCoach($cName, $cRecord, $Coach_ID) {
+function updateCoach($cName, $cRecord, $cid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE Coach SET Name = ?, Record = ? where Coach_ID = ?");
-        $stmt->bind_param("ssi", $cName, $cRecord, $Coach_ID);
+        $stmt->bind_param("ssi", $cName, $cRecord, $cid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -41,11 +41,11 @@ function updateCoach($cName, $cRecord, $Coach_ID) {
     }
 }
 
-function deleteCoach($Coach_ID) {
+function deleteCoach($cid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from Coach where Coach_ID = ?");
-        $stmt->bind_param("i", $Coach_ID);
+        $stmt->bind_param("i", $cid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
