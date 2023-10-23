@@ -31,7 +31,7 @@ if (isset($_POST['actionType'])){
       break;
   }
 }
-$teams = selectCoaches();
+$coaches = selectCoaches();
 include "view-coaches.php";
 include "view-footer.php";
 ?>
