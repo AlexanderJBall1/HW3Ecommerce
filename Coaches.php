@@ -8,7 +8,7 @@ if (isset($_POST['actionType'])){
   switch($_POST['actionType']){
     case "Add":
       if(insertCoach($_POST['cName'], $_POST['cRecord'])){
-        echo '<div class="alert alert-success" role="alert">Team Added</div>';
+        echo '<div class="alert alert-success" role="alert">Coach Added</div>';
       } else{
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
@@ -16,7 +16,7 @@ if (isset($_POST['actionType'])){
 
     case "Edit":
       if(updateCoach($_POST['cName'], $_POST['cRecord'], $_POST['cid'])){
-        echo '<div class="alert alert-success" role="alert">Team Edited.</div>';
+        echo '<div class="alert alert-success" role="alert">Coach Edited.</div>';
       } else{
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
@@ -24,7 +24,7 @@ if (isset($_POST['actionType'])){
 
     case "Delete":
       if(deleteCoach($_POST['cid'],)){
-        echo '<div class="alert alert-success" role="alert">Team Deleted.</div>';
+        echo '<div class="alert alert-success" role="alert">Coach Deleted.</div>';
       } else{
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
