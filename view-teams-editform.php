@@ -4,7 +4,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="editTeamModal<?php echo $team['Team_ID']; ?">" tabindex="-1" aria-labelledby="editTeamModalLabel<?php echo $team['Team_ID']; ?>" aria-hidden="true">
+<div class="modal fade" id="editTeamModal<?php echo $team['Team_ID']; ?>" tabindex="-1" aria-labelledby="editTeamModalLabel<?php echo $team['Team_ID']; ?>" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
