@@ -1,5 +1,5 @@
 <?php
-function selectTeams() {
+function selectCoaches() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT Coach_ID, Name, Record FROM `Coach`");
@@ -13,7 +13,7 @@ function selectTeams() {
     }
 }
 
-function insertTeam($cName, $cRecord) {
+function insertCoach($cName, $cRecord) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `Coach` (`Name`, `Record`) VALUES (?, ?);");
@@ -41,7 +41,7 @@ function updateCoach($cName, $cRecord, $Coach_ID) {
     }
 }
 
-function deleteTeam($Coach_ID) {
+function deleteCoach($Coach_ID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from Coach where Coach_ID = ?");
