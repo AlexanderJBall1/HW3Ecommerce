@@ -19,9 +19,8 @@ function insertTeam($tName, $tCity) {
         $stmt = $conn->prepare("INSERT INTO `Team` (`Name`, `City`) VALUES (?, ?);");
         $stmt->bind_param("ss", $tName, $tCity);
         $success = $stmt->execute();
-        $result = $stmt->get_result();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
@@ -34,9 +33,8 @@ function updateTeam($tName, $tCity, $Team_ID) {
         $stmt = $conn->prepare("UPDATE Team SET Name = ?, City = ? where Team_ID = ?");
         $stmt->bind_param("ssi", $tName, $tCity, $Team_ID);
         $success = $stmt->execute();
-        $result = $stmt->get_result();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
@@ -49,9 +47,8 @@ function deleteTeam($Team_ID) {
         $stmt = $conn->prepare("delete from Team where Team_ID = ?");
         $stmt->bind_param("i", $Team_ID);
         $success = $stmt->execute();
-        $result = $stmt->get_result();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
