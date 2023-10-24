@@ -1,6 +1,4 @@
 <?php
-
-
 function selectPlayerTeams($tid) {
     try {
         $conn = get_db_connection();
