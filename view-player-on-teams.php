@@ -1,4 +1,7 @@
 <h1>Players on Team</h1>
+  <?php
+    include "view-player-on-teams-newform.php";
+  ?>
 <div class="row row-cols-1 row-cols-md-3 g-4">
 <?php
 while ($team = $teams->fetch_assoc()){
