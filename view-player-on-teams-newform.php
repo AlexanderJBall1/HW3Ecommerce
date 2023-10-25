@@ -21,7 +21,7 @@
     <input type="text" class="form-control" id="tid" name = "tid">
 
 <?php
-$playerList = selectPlayerForInput();
+$playerList = selectPlayersForInput();
 $selectedPlayer = 0;
 include "view-player-input-list.php";
 ?>
