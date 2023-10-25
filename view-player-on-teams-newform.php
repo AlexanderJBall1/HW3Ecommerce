@@ -21,8 +21,8 @@
     <input type="text" class="form-control" id="tid" name = "tid">
 
 <?php
-$playerList = selectPlayersForInput();
-$selectedPlayer = 0;
+$teamList = selectTeamsForInput();
+$selectedTeam = 0;
 include "view-player-input-list.php";
 ?>
 
