@@ -71,11 +71,11 @@ function insertPlayerTeam($tid, $pid, $salary, $yrs) {
     }
 }
 
-function updatePlayerTeam($tid, $pid, $yrs, $num, $salary, $ptid) {
+function updatePlayerTeam($tid, $pid, $salary, $years,) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `PlayerTeam` set `Team_ID` = ?, `Player_ID` = ?, `Years` = ?, `Number` = ?, `Salary` = ? where PT_id = ?");
-        $stmt->bind_param("iisssi", $tid, $pid, $yrs, $num, $salary, $ptid);
+        $stmt = $conn->prepare("update `PlayerTeam` set `Team_ID` = ?, `Player_ID` = ?, `Salary` = ?, `Years` = ?, where Team_ID = ?");
+        $stmt->bind_param("iiss", $tid, $pid, $yrs, $salary);
         $result = $stmt->execute();
         $conn->close();
         return $result;
