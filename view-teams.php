@@ -29,7 +29,7 @@ while ($team = $playersonteams->fetch_assoc()){
     <td><?php echo $team['Name']; ?></td>
     <td>
       <form method = "get" action = "player-on-teams.php">
-        <input type = "hidden" name = "pid" value = "<?php echo $team['T.Team_ID']; ?>">
+        <input type = "hidden" name = "pid" value = "<?php echo $team['Team_ID']; ?>">
         <button type = "submit" class = "btn btn-primary">Players on Team</button>
       </form>
     </td>
