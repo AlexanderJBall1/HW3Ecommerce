@@ -1,4 +1,4 @@
-<select class="form-select" id="pid" name="pid">
+<select class="form-select" id="tid" name="tid">
 <?php
 while ($playerItem = $playerList->fetch_assoc()) {
   $selText = "";
