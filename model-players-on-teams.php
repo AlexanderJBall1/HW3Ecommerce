@@ -62,9 +62,9 @@ function insertPlayerTeam($tid, $pid, $yrs, $num, $salary) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `PlayerTeam` (`Team_ID`, `Player_ID`, `Years`, `Number`, `Salary`) VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("iisss", $tid, $pid, $yrs, $num, $salary);
-        $success = $stmt->execute();
+        $result = $stmt->execute();
         $conn->close();
-        return $success;
+        return $result;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
@@ -76,9 +76,9 @@ function updatePlayerTeam($tid, $pid, $yrs, $num, $salary, $ptid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `PlayerTeam` set `Team_ID` = ?, `Player_ID` = ?, `Years` = ?, `Number` = ?, `Salary` = ? where PT_id = ?");
         $stmt->bind_param("iisssi", $tid, $pid, $yrs, $num, $salary, $ptid)
-        $success = $stmt->execute();
+        $result = $stmt->execute();
         $conn->close();
-        return $success;
+        return $result;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
@@ -90,9 +90,9 @@ function deletePlayerTeam($ptid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from PlayerTeam where PT_ID=?");
         $stmt->bind_param("i", $ptid);
-        $success = $stmt->execute();
+        $result = $stmt->execute();
         $conn->close();
-        return $success;
+        return $result;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
