@@ -17,7 +17,7 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="tid<?php echo $player['Team_ID']; ?>" class="form-label">Team</label>
+            <label for="tid<?php echo $player['PT_ID']; ?>" class="form-label">Team</label>
 <?php
 $playerList = selectPlayersForInput();
 $selectedTeam = $player['Team_ID'];
