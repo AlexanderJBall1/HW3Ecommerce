@@ -4,7 +4,7 @@
 while ($team = $teams->fetch_assoc()){
 ?>
 <div class = "col">
-`<div class="card">
+`<div class="card h-100">
     <div class="card-body">
       <h5 class="card-title"><?php echo $team['Name']; ?></h5>
       <p class="card-text">
