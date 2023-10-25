@@ -25,7 +25,7 @@
     <input type="text" class="form-control" id="ptSalary" name = "ptSalary">
   </div>
   <div class="mb-3">
-    <label for="ptSalary" class="form-label">Years Played</label>
+    <label for="ptYearsPlayed" class="form-label">Years Played</label>
     <input type="text" class="form-control" id="ptYearsPlayed" name = "ptYearsPlayed">
   </div>
         <input type = "hidden" name = "actionType" value = "Add">
