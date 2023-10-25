@@ -16,10 +16,7 @@
       </div>
 <div class="modal-body">
 <form method = "post" action="">
-  <div class="mb-3">
-    <label for="tid" class="form-label">Team</label>
-    <input type="text" class="form-control" id="tid" name = "tid">
-
+        
 <?php
 $teamList = selectTeamsForInput();
 $selectedTeam = 0;
