@@ -29,10 +29,6 @@ include "view-player-input-list.php";
             <input type="text" class="form-control" id="pid<?php echo $player['PT_ID']; ?>" name="pid" value="<?php echo $player['Player_ID']; ?>">
           </div>
           <div class="mb-3">
-            <label for="pName<?php echo $player['PT_ID']; ?>" class="form-label">Player Name</label>
-            <input type="text" class="form-control" id="pname<?php echo $player['PT_ID']; ?>" name="pname" value="<?php echo $player['Player_Name']; ?>">
-          </div>
-          <div class="mb-3">
             <label for="salary<?php echo $player['PT_ID']; ?>" class="form-label">Salary</label>
             <input type="text" class="form-control" id="psalary<?php echo $player['PT_ID']; ?>" name="pSalary" value="<?php echo $player['Salary']; ?>">
           </div>
