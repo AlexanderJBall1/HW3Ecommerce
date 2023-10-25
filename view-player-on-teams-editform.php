@@ -25,20 +25,20 @@ include "view-player-input-list.php";
 ?>
           </div>
           <div class="mb-3">
-            <label for="cid<?php echo $team['PT_ID']; ?>" class="form-label">Player ID</label>
-            <input type="text" class="form-control" id="cid<?php echo $team['PT_ID']; ?>" name="pid" value="<?php echo $team['Player_ID']; ?>">
+            <label for="pid<?php echo $team['PT_ID']; ?>" class="form-label">Player ID</label>
+            <input type="text" class="form-control" id="pid<?php echo $team['PT_ID']; ?>" name="pid" value="<?php echo $team['Player_ID']; ?>">
           </div>
           <div class="mb-3">
-            <label for="sem<?php echo $team['PT_ID']; ?>" class="form-label">Player Name</label>
-            <input type="text" class="form-control" id="sem<?php echo $team['PT_ID']; ?>" name="pname" value="<?php echo $team['Player_Name']; ?>">
+            <label for="pName<?php echo $team['PT_ID']; ?>" class="form-label">Player Name</label>
+            <input type="text" class="form-control" id="pname<?php echo $team['PT_ID']; ?>" name="pname" value="<?php echo $team['Player_Name']; ?>">
           </div>
           <div class="mb-3">
-            <label for="room<?php echo $team['PT_ID']; ?>" class="form-label">Salary</label>
-            <input type="text" class="form-control" id="room<?php echo $team['PT_ID']; ?>" name="pSalary" value="<?php echo $team['Salary']; ?>">
+            <label for="salary<?php echo $team['PT_ID']; ?>" class="form-label">Salary</label>
+            <input type="text" class="form-control" id="psalary<?php echo $team['PT_ID']; ?>" name="pSalary" value="<?php echo $team['Salary']; ?>">
           </div>
           <div class="mb-3">
-            <label for="daytime<?php echo $team['PT_ID']; ?>" class="form-label">Day/ time</label>
-            <input type="text" class="form-control" id="daytime<?php echo $team['PT_ID']; ?>" name="pYears" value="<?php echo $team['Years']; ?>">
+            <label for="years<?php echo $team['PT_ID']; ?>" class="form-label">Years Played</label>
+            <input type="text" class="form-control" id="pyears<?php echo $team['PT_ID']; ?>" name="pYears" value="<?php echo $team['Years']; ?>">
           </div>
             <input type="hidden" name="sid" value="<?php echo $team['PT_ID']; ?>">
             <input type="hidden" name="actionType" value="Edit">
