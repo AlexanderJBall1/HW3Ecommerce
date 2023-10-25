@@ -26,8 +26,8 @@ include "view-player-input-list.php";
 ?>
      
   <div class="mb-3">
-    <label for="ptName" class="form-label">Player Name</label>
-    <input type="text" class="form-control" id="pName" name = "ptName">
+    <label for="ptName" class="form-label">Player ID</label>
+    <input type="text" class="form-control" id="pName" name = "pid">
   </div>
   <div class="mb-3">
     <label for="ptSalary" class="form-label">Player Salary</label>
