@@ -1,8 +1,9 @@
 <h1>Players on Team</h1>
-<div class="card-group">
+<div class="row row-cols-1 row-cols-md-3 g-4">
 <?php
 while ($team = $teams->fetch_assoc()){
 ?>
+<div class = "col">
 `<div class="card">
     <div class="card-body">
       <h5 class="card-title"><?php echo $team['Name']; ?></h5>
@@ -21,6 +22,7 @@ while($player = $playeronteams->fetch_assoc()){
       </p>
     </div>
   </div>
+</div>
 <?php
 }
 ?>
