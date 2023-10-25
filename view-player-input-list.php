@@ -1,12 +1,12 @@
 <select class="form-select" id="tid" name="tid">
 <?php
-while ($playerItem = $playerList->fetch_assoc()) {
+while ($teamItem = $teamList->fetch_assoc()) {
   $selText = "";
-  if ($selectedPlayer == $playerItem['Player_ID']) {
+  if ($selectedTeam == $teamItem['Team_ID']) {
     $selText = " selected";
   }
 ?>
-  <option value="<?php echo $playerItem['Player_ID']; ?>"<?=$selText?>><?php echo $playerItem['Player_Name']; ?></option>
+  <option value="<?php echo $teamItem['Team_ID']; ?>"<?=$selText?>><?php echo $teamItem['Name']; ?></option>
 <?php
 }
 ?>
