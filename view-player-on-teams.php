@@ -1,4 +1,4 @@
-<h1>Player Info</h1>
+<h1>Players on Team</h1>
 <div class="card-group">
 <?php
 while ($team = $teams->fetch_assoc()){
