@@ -16,24 +16,26 @@
       </div>
 <div class="modal-body">
 <form method = "post" action="">
-        
+<div class="mb-3">
+    <label for="tid" class="form-label">Team ID</label>    
+
 <?php
 $teamList = selectTeamsForInput();
 $selectedTeam = 0;
 include "view-player-input-list.php";
 ?>
-
+     
   <div class="mb-3">
     <label for="ptName" class="form-label">Player Name</label>
-    <input type="text" class="form-control" id="ptName" name = "ptName">
+    <input type="text" class="form-control" id="pName" name = "ptName">
   </div>
   <div class="mb-3">
     <label for="ptSalary" class="form-label">Player Salary</label>
-    <input type="text" class="form-control" id="ptSalary" name = "ptSalary">
+    <input type="text" class="form-control" id="pSalary" name = "ptSalary">
   </div>
   <div class="mb-3">
     <label for="ptYearsPlayed" class="form-label">Years Played</label>
-    <input type="text" class="form-control" id="ptYearsPlayed" name = "ptYearsPlayed">
+    <input type="text" class="form-control" id="pYearsPlayed" name = "ptYearsPlayed">
   </div>
         <input type = "hidden" name = "actionType" value = "Add">
   <button type="submit" class="btn btn-primary">Save</button>
