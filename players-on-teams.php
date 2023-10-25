@@ -6,7 +6,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-      if (insertPlayerTeam($_POST['tid'], $_POST['pid'], $_POST['yrs'], $_POST['num'], $_POST['salary'])) {
+      if (insertPlayerTeam($_POST['tid'], $_POST['pid'], $_POST['ptSalary'], $_POST['num'], $_POST['ptYearsPlayed'])) {
         echo '<div class="alert alert-success" role="alert">Section added.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
