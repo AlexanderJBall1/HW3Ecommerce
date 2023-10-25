@@ -46,7 +46,7 @@ function selectPlayersForInput() {
 function selectTeamsForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT Team_ID, Team_Name FROM `Team` order by Team_Name");
+        $stmt = $conn->prepare("SELECT Team_ID, Name FROM `Team` order by Name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
