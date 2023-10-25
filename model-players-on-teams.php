@@ -75,7 +75,7 @@ function updatePlayerTeam($tid, $pid, $yrs, $num, $salary, $ptid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `PlayerTeam` set `Team_ID` = ?, `Player_ID` = ?, `Years` = ?, `Number` = ?, `Salary` = ? where PT_id = ?");
-        $stmt->bind_param("iisssi", $tid, $pid, $yrs, $num, $salary, $ptid)
+        $stmt->bind_param("iisssi", $tid, $pid, $yrs, $num, $salary, $ptid);
         $result = $stmt->execute();
         $conn->close();
         return $result;
