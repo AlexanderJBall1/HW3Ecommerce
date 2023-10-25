@@ -21,7 +21,7 @@
 <?php
 $instructorList = selectPlayersForInput();
 $selectedTeam = $team['Team_ID'];
-include "view-player-on-teams-input-list.php";
+include "view-player-input-list.php";
 ?>
           </div>
           <div class="mb-3">
