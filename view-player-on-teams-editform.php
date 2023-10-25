@@ -19,8 +19,8 @@
           <div class="mb-3">
             <label for="tid<?php echo $player['PT_ID']; ?>" class="form-label">Team</label>
 <?php
-$playerList = selectPlayersForInput();
-$selectedTeam = $player['Player_ID'];
+$teamList = selectTeamsForInput();
+$selectedTeam = $player['Team_ID'];
 include "view-player-input-list.php";
 ?>
           </div>
