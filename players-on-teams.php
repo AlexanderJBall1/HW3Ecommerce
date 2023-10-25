@@ -1,7 +1,7 @@
 <?php
 require_once("util-db.php");
-require_once("model-player-on-teams.php");
-$pageTitle = "Players on Team";
+require_once("model-players-on-teams.php");
+$pageTitle = "Players on Teams";
 include "view-header.php";
 $playersonteams = selectPlayerOnTeams($_GET['tid']);
 include "view-player-on-teams.php";
