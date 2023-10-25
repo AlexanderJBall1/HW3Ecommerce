@@ -57,7 +57,7 @@ function selectTeamsForInput() {
     }
 }
 
-function insertPlayerTeam($tid, $pid, $yrs, $salary) {
+function insertPlayerTeam($tid, $pid, $salary, $yrs) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `PlayerTeam` (`Team_ID`, `Player_ID`, `Years`, `Salary`) VALUES (?, ?, ?, ?)");
