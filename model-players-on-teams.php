@@ -57,11 +57,11 @@ function selectTeamsForInput() {
     }
 }
 
-function insertPlayerTeam($tid, $pid, $salary, $yrs) {
+function insertPlayerTeam($tid, $pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `PlayerTeam` (`Team_ID`, `Player_ID`, `Years`, `Salary`) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("iiss", $tid, $pid, $yrs, $salary);
+        $stmt = $conn->prepare("INSERT INTO `PlayerTeam` (`Team_ID`, `Player_ID`) VALUES (?, ?,)");
+        $stmt->bind_param("ii", $tid, $pid);
         $result = $stmt->execute();
         $conn->close();
         return $result;
