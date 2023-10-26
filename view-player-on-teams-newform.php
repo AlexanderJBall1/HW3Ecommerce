@@ -29,14 +29,6 @@ include "view-player-input-list.php";
     <label for="ptName" class="form-label">Player ID</label>
     <input type="text" class="form-control" id="pName" name = "pid">
   </div>
-  <div class="mb-3">
-    <label for="ptSalary" class="form-label">Player Salary</label>
-    <input type="text" class="form-control" id="pSalary" name = "ptSalary">
-  </div>
-  <div class="mb-3">
-    <label for="ptYearsPlayed" class="form-label">Years Played</label>
-    <input type="text" class="form-control" id="pYearsPlayed" name = "ptYearsPlayed">
-  </div>
         <input type = "hidden" name = "actionType" value = "Add">
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
