@@ -60,7 +60,7 @@ function selectTeamsForInput() {
 function insertPlayerTeam($tid, $pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `PlayerTeam` (`Team_ID`, `Player_ID`) VALUES (?, ?,)");
+        $stmt = $conn->prepare("INSERT INTO `PlayerTeam` (`Team_ID`, `Player_ID`) VALUES (?, ?)");
         $stmt->bind_param("ii", $tid, $pid);
         $result = $stmt->execute();
         $conn->close();
