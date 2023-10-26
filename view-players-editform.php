@@ -28,7 +28,7 @@
     <label for="tCity<?php echo $player['Player_ID']; ?>" class="form-label">Player Team</label>
     <input type="text" class="form-control" id="tCity<?php echo $player['Player_ID']; ?>" name = "pTeam" value = "<?php echo $player['Player_Team']; ?>" >
   </div>
-        <input type = "hidden" name = "tid" value = "<?php echo $player['Player_ID']; ?>">
+        <input type = "hidden" name = "pid" value = "<?php echo $player['Player_ID']; ?>">
         <input type = "hidden" name = "actionType" value = "Edit">
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
