@@ -36,7 +36,7 @@ include "view-player-input-list.php";
             <label for="years<?php echo $player['PT_ID']; ?>" class="form-label">Years Played</label>
             <input type="text" class="form-control" id="pyears<?php echo $player['PT_ID']; ?>" name="pYears" value="<?php echo $player['Years']; ?>">
           </div>
-            <input type="hidden" name="sid" value="<?php echo $player['PT_ID']; ?>">
+            <input type="hidden" name="ptid" value="<?php echo $player['PT_ID']; ?>">
             <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
