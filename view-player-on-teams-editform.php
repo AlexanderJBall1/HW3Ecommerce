@@ -28,14 +28,6 @@ include "view-player-input-list.php";
             <label for="pid<?php echo $player['PT_ID']; ?>" class="form-label">Player ID</label>
             <input type="text" class="form-control" id="pid<?php echo $player['PT_ID']; ?>" name="pid" value="<?php echo $player['Player_ID']; ?>">
           </div>
-          <div class="mb-3">
-            <label for="salary<?php echo $player['PT_ID']; ?>" class="form-label">Salary</label>
-            <input type="text" class="form-control" id="psalary<?php echo $player['PT_ID']; ?>" name="pSalary" value="<?php echo $player['Salary']; ?>">
-          </div>
-          <div class="mb-3">
-            <label for="years<?php echo $player['PT_ID']; ?>" class="form-label">Years Played</label>
-            <input type="text" class="form-control" id="pyears<?php echo $player['PT_ID']; ?>" name="pYears" value="<?php echo $player['Years']; ?>">
-          </div>
             <input type="hidden" name="ptid" value="<?php echo $player['PT_ID']; ?>">
             <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
