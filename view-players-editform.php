@@ -18,13 +18,17 @@
 <form method = "post" action="">
   <div class="mb-3">
     <label for="tName<?php echo $player['Player_ID']; ?>" class="form-label">Player Name</label>
-    <input type="text" class="form-control" id="tName<?php echo $team['Team_ID']; ?>" name = "tName" value = "<?php echo $team['Name']; ?>">
+    <input type="text" class="form-control" id="tName<?php echo $player['Player_ID']; ?>" name = "pName" value = "<?php echo $player['Player_Name']; ?>">
   </div>
   <div class="mb-3">
-    <label for="tCity<?php echo $team['Team_ID']; ?>" class="form-label">Team City</label>
-    <input type="text" class="form-control" id="tCity<?php echo $team['Team_ID']; ?>" name = "tCity" value = "<?php echo $team['City']; ?>" >
+    <label for="tCity<?php echo $player['Player_ID']; ?>" class="form-label">Player Number</label>
+    <input type="text" class="form-control" id="tCity<?php echo $player['Player_ID']; ?>" name = "pNum" value = "<?php echo $player['Player_Number']; ?>" >
   </div>
-        <input type = "hidden" name = "tid" value = "<?php echo $team['Team_ID']; ?>">
+  <div class="mb-3">
+    <label for="tCity<?php echo $player['Player_ID']; ?>" class="form-label">Player Team</label>
+    <input type="text" class="form-control" id="tCity<?php echo $player['Player_ID']; ?>" name = "pTeam" value = "<?php echo $player['Player_Team']; ?>" >
+  </div>
+        <input type = "hidden" name = "tid" value = "<?php echo $player['Player_ID']; ?>">
         <input type = "hidden" name = "actionType" value = "Edit">
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
