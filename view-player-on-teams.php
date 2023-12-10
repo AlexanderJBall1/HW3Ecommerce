@@ -2,16 +2,15 @@
   <?php
     include "view-player-on-teams-newform.php";
   ?>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="card-group">
 <?php
 while ($team = $teams->fetch_assoc()){
 ?>
-<div class = "col">
-`<div class="card h-100">
+  <div class="card">
     <div class="card-body">
       <h5 class="card-title"><?php echo $team['Name']; ?></h5>
       <p class="card-text">
-        <ul class="list-group">
+      <ul class="list-group">
 <?php
  $playeronteams = selectPlayerOnTeams($team['Team_ID']);
 while($player = $playeronteams->fetch_assoc()){
